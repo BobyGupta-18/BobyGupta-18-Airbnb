@@ -87,10 +87,77 @@ body {
     padding: 0;
 }
 .img-fluid {
-  max-width:100;
+  max-width:100%;
   height:auto;
 }
 #map {
   height:400px;
   width:80vh;
+  max-width:100%;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .navbar {
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    .navbar .search-form {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Categories */
+    .filters {
+        width: 100%;
+        overflow-x: auto;
+        display: flex;
+        gap: 20px;
+        padding: 10px 15px;
+        white-space: nowrap;
+    }
+
+    .filter {
+        flex: 0 0 auto;
+    }
+
+    /* Tax toggle */
+    .tax-toggle {
+        margin: 10px 15px;
+        width: auto;
+        font-size: 14px;
+    }
+
+    /* Listings container */
+    .listing-container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    /* Listing cards */
+    .listing-card {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .listing-card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    /* Footer */
+    footer {
+        width: 100%;
+        text-align: center;
+    }
 }
